@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/books')
+      .get('https://orbital-lantern-403815.ew.r.appspot.com/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
